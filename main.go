@@ -23,7 +23,6 @@ func main() {
 	if jsonURL == "" {
 		jsonURL = "https://github.com/arkadiyt/bounty-targets-data/raw/refs/heads/main/data/hackerone_data.json"
 	}
-
 	if username == "" {
 		username = "Notification Bot"
 	}
