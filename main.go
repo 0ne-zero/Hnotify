@@ -7,14 +7,15 @@ import (
 )
 
 func main() {
+    // Start
 	log.Println("Starting the program...")
 
 	// Required environment variables
 	webhookURL := os.Getenv("HNOTIFY_DISCORD_WEBHOOK_URL")
-
 	username := os.Getenv("HNOTIFY_DISCORD_USERNAME")
 	jsonURL := os.Getenv("HNOTIFY_JSON_URL")
 	localFilename := os.Getenv("HNOTIFY_LOCAL_FILENAME")
+
 	// Check if required environment variables are set
 	if webhookURL == "" {
 		log.Fatal("Error: HNOTIFY_DISCORD_WEBHOOK_URL environment variable is not set.")
