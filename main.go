@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-    // Start
+	// Start
 	log.Println("Starting the program...")
 
 	// Required environment variables
@@ -82,7 +82,7 @@ func process(oldData, newData []byte, username, localFilename, webhookURL string
 		// Send a notification for each change
 		var httpClient = createHTTPClient()
 		for _, change := range changes {
-			sendNotification(httpClient, webhookURL, username, change)
+			sendNotification(httpClient, username, change, webhookURL)
 		}
 		log.Println("All Notifications sent.")
 
